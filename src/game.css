@@ -1,0 +1,12 @@
+li {
+ list-style-type:none;
+  height: 30px;
+  width: 30px;
+}
+
+.whack-a-mole {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 200px;
+  text-align: center;
+}

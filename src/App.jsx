@@ -3,10 +3,7 @@ import GameStart from "./GameStart";
 import GamePlay from "./GamePlay";
 
 export default function App() {
-  return (
-    <main>
-      <GameStart />
-      <GamePlay />
-    </main>
-);
+  const { phase } = useGame();
+  if (phase === "play") return <GamePlay />;
+  return <GameStart />;
 }
